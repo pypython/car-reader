@@ -5,22 +5,80 @@
     <meta charset="utf-8">
     <title>car-reader    차번호 스캔</title>
   </head>
-  <body>
-    <h1><a href="index.html">car-reader</a></h1>
-    <ul>
-      <li><a href="1.html">번호스캔</a></li>
-      <li><a href="2.html">차계부</a></li>
-      <li><a href="3.html">자동차등록증</a></li>
-    </ul>
-  </body>
+  <style>
+    body{
+      margin: 5px;
+    }
+     a {
+       color: #0092A6;
+       text-decoration: none;
+     }
+     h1{
+       font-size: 45px;
+       text-align: center;
+       border-bottom: 1px solid gray;
+       padding: 20px;
+       margin: 0px;
 
-   <h1>car-reader 차번호 스캔</h1>
-   <img src="naj.jpg" width="30%">
- <p>사용료 부담 <strong>  NO </strong> </p>
-<img src="face1.png" width="30%">
- <p>어플가입시 <u>안심번호 증정</u></p>
- <img src="cla.jpg" width="30%">
- <p>수신자 실제 번호를 노출시키지 않음</p>
-<img src="ber.jpg" width="30%">
- <p>정보유출없이 간단하게 번호를 스캔하세요</p>
+
+     }
+     ol{
+       border-right: 1px solid gray;
+       width: 150px;
+       margin: 0px;
+       padding: 20px;
+     }
+     #grid{
+       display: grid;
+       grid-template-columns: 200px 1fr;
+     }
+     #grid ol{
+       padding-left: 33px;
+     }
+     #grid #article{
+       padding-left: 25px;
+     }
+
+     @media(max-width:800px){
+       #grid{
+         display: block;
+       }
+       ol{
+         border-right: none;
+       }
+       h1{
+         border-bottom: none;
+       }
+     }
+  </style>
+  <body>
+    <body>
+      <h1><a href="index.html">car-reader</a></h1>
+      <div id="grid">
+        <ol>
+          <li><a href="1.html">번호스캔</a></li>
+          <li><a href="2.html">차계부</a></li>
+          <li><a href="3.html">자동차 등록증</a></li>
+        </ol>
+        <div id="article">
+            <h2>car-reader 차번호 스캔</h2>
+            <img src="naj.jpg" width="30%">
+            <p>
+               사용료 부담 <strong>  NO </strong>
+            </p>
+            <img src="face1.png" width="30%">
+            <p>
+             어플가입시 <u>안심번호 증정</u>
+             </p>
+             <img src="cla.jpg" width="30%">
+             <p>
+             수신자 실제 번호를 노출시키지 않음
+             </p>
+             <img src="ber.jpg" width="30%">
+             <p>
+               정보유출없이 간단하게 번호를 스캔하세요
+            </p>
+         </div>
+      </div>
+   </body>
  </html>

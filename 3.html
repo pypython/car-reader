@@ -5,16 +5,66 @@
     <meta charset="utf-8">
     <title>car-reader 자동차 등록증</title>
   </head>
+  <style>
+  body{
+    margin: 5px;
+  }
+   a {
+     color: #0092A6;
+     text-decoration: none;
+   }
+   h1{
+     font-size: 45px;
+     text-align: center;
+     border-bottom: 1px solid gray;
+     padding: 20px;
+     margin: 0px;
+
+
+   }
+   ol{
+     border-right: 1px solid gray;
+     width: 150px;
+     margin: 0px;
+     padding: 20px;
+   }
+   #grid{
+     display: grid;
+     grid-template-columns: 200px 1fr;
+   }
+   #grid ol{
+     padding-left: 33px;
+   }
+   #grid #article{
+     padding-left: 25px;
+   }
+
+   @media(max-width:800px){
+     #grid{
+       display: block;
+     }
+     ol{
+       border-right: none;
+     }
+     h1{
+       border-bottom: none;
+     }
+   }
+  </style>
   <body>
     <h1><a href="index.html">car-reader</a></h1>
-    <ul>
-      <li><a href="1.html">번호스캔</a></li>
-      <li><a href="2.html">차계부</a></li>
-      <li><a href="3.html">자동차등록증</a></li>
-    </ul>
-  </body>
-
-   <h1>car-reader</h1>
-   <img src="mat.jpg" width="50%">
- <p>간편하게 사용할 수 있는 <strong>  모바일 등록증 </strong> </p> <p>어플가입시 <u>차량등록증 대체 가능</u></p> <p>모바일 등록증으로 더 간편하게</p>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">번호스캔</a></li>
+        <li><a href="2.html">차계부</a></li>
+        <li><a href="3.html">자동차 등록증</a></li>
+      </ol>
+      <div id="article">
+          <h2>car-reader 자동차 등록증</h2>
+          <img src="mat.jpg" width="50%">
+        <p>간편하게 사용할 수 있는 <strong>  모바일 등록증 </strong> </p> <p>어플가입시 <u>차량등록증 대체 가능</u></p> <p>모바일 등록증으로 더 간편하게</p>
+       </div>
+    </div>
+ </body>
  </html>
+  
